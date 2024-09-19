@@ -7,7 +7,7 @@ import com.valdir.heldesk.enums.Status;
 
 public class Chamado {
     private Integer id;
-    private LocalDate dataabertura = LocalDate.now();
+    private LocalDate dataabertura = LocalDate.now(); // dessa forma já recebe a data Atual.
     private LocalDate dataFechamento;
     private Prioridade prioridade;
     private Status status;
@@ -16,11 +16,11 @@ public class Chamado {
 
     private Tecnico tecnico;
     private Cliente cliente;
-    public Chamado() {
+    public Chamado(){
         super();
     }
 
-    public Chamado(Integer id, Prioridade prioridade, Status status, String titulo, String observacoes, Chamado chamado, Cliente cliente){
+    public Chamado(Integer id, Prioridade prioridade, Status status, String titulo, String observacoes, Tecnico tecnico, Cliente cliente){
         super();
         this.id = id;
         this.prioridade = prioridade;
@@ -128,5 +128,6 @@ public class Chamado {
         return true;
     }
 
-    
+
+
 }

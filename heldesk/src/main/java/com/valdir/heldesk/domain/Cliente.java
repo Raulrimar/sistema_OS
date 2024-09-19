@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente extends Pessoa {// a classe cliente se extenda a classe pessoa
-    private List<Chamado> chamados = new ArrayList<>();
+    private List<Chamado> chamados = new ArrayList<>();//cliente terá uma lsita de chamados feitos
     
     public Cliente(){
         super();
